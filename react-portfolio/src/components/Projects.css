@@ -1,0 +1,19 @@
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects .topRow {
+  display:flex;
+}
+
+.projects .bottomRow {
+  display: flex;
+}
+
+.projects .projectCard {
+  flex: 1 1 auto;
+  border: 1px solid black;
+}

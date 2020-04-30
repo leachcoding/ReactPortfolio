@@ -1,7 +1,5 @@
 .footer {
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
   background-color: blue;
-  margin-top: -4px;
-  margin-bottom: 5px;
 }

@@ -1,21 +1,23 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import Home from './components/Home';
-import Footer from './components/Footer';
+import Landing from './components/Landing';
+import About from './components/About';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Misc from './components/Misc';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Home/>
-      {/* Bio - About */}
-      {/* Tech Section */}
-      {/* Projects Section*/}
-      {/* Open Source Blog Section*/}
-      <Footer/>
+      <Landing />
+      <About/>
+      <Skills/>
       <Projects/>
+      <Misc/>
+      <Footer/>
     </div>
   );
 }

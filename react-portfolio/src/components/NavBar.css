@@ -89,16 +89,14 @@
   width: 35px;
   height: 5px;
   background-color: black;
-  margin: 6px 0;
+  margin: 6px 5px;
 }
 
 #hamburgerMain {
   overflow: hidden;
-   background-color: white;
-   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-   position: fixed; /* Sticky/fixed navbar */
-   width: 98%;
-   z-index: 98;
-   padding: 5px 0px 5px 14px;
-   margin-top: -5vh;
+  background-color: white;
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 98%;
+  z-index: 98;
 }
