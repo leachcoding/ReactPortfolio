@@ -1,5 +1,96 @@
 .about {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  background-color: #d4e8e1;
+}
+
+.about .aboutTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.about .aboutTop img {
+  width: 100%;
+  box-shadow: 2px 5px 3px grey;
+  border-radius: 1rem;
+  border: 1px solid black;
+  animation: bounce 1.5s alternate infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0.25rem);
+  }
+}
+.about p {
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 5px;
+  margin-left: 10px;
+  text-indent: 2rem;
+  color: #11252d; /* Dark Blue */
+  letter-spacing: 0.1rem;
+}
+
+.about svg {
+  width: 100%;
+  height: 15vh;
+  margin-top: 20px;
+  margin-bottom: -11.7vh;
+  filter: drop-shadow(0 -3px 1px #11252d);
+}
+
+.animatedAngled .animatedAngledPath {
+  fill: #125665;
+  animation: animateAngle 3s linear infinite;
+}
+
+@keyframes animateAngle {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.dripContainer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2fb7cf;
+}
+
+.dripContainer h1 {
+  height: 20%;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  border-left-style: ridge;
+  border-top-style: ridge;
+  border-right-style: ridge;
+  border-bottom-style: ridge;
+  border-right-color: #125665;
+  border-bottom-color: #125665;
+  color: #11252d; /* Dark Blue */
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.dripContainer svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 -3px 1px #125665);
+  margin-bottom: 0px;
 }

@@ -5,7 +5,9 @@ const Misc = () => {
   return (
     <>
       <div className='misc'>
-        <h1>BLOG, COURSES, AND TUTORIALS</h1>
+        <div className='pointedDiv'>
+          <h1>BLOG, COURSES, AND TUTORIALS</h1>
+        </div>
 
         <section className='rowMisc'>
           <div className='blogMisc'>

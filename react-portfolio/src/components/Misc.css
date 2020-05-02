@@ -2,6 +2,14 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #d4e8e1;
+  font-size: 1.1rem;
+}
+
+.misc .pointedDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #2fb7e7;
 }
 
 .misc .rowMisc {
