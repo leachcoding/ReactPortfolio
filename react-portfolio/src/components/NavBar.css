@@ -1,0 +1,102 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-color: #252527;
+  overflow-x: hidden;
+  transition: 0.8s;
+  padding-top: 60px;
+  border-radius: 10px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .navHome {
+  color: white;
+}
+.sidenav .navAbout {
+  background-color: #dd1e2f;
+  color: black;
+  border-top: 1px solid darkred;
+  border-bottom: 1px solid darkred;
+}
+.sidenav .navProject {
+  background-color: #EBB035;
+  color: black;
+  border-top: 1px solid #9B870C;
+  border-bottom: 1px solid #9B870C;
+}
+.sidenav .navCourse {
+  background-color: #06A2CB;
+  color: black;
+  border-top: 1px solid darkblue;
+  border-bottom: 1px solid darkblue;
+}
+.sidenav .navBlog {
+  background-color: #218559;
+  color: black;
+  border-top: 1px solid darkgreen;
+  border-bottom: 1px solid darkgreen;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.closebtn {
+  color: lightgrey;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navigation .socialMedia .socialIcons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.navigation .socialMedia .socialIcons a img {
+  width: 100%;
+  height: 100%;
+}
+
+.hamburgerBar {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 5px;
+}
+
+#hamburgerMain {
+  overflow: hidden;
+  background-color: white;
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 98%;
+  z-index: 98;
+}

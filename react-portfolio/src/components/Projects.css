@@ -1,0 +1,83 @@
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1rem;
+  background-color: #d4e8e1;
+}
+
+.projects h1 {
+  width: 25%;
+  align-self: center;
+  text-align: center;
+  transform: rotate(-3.5deg);
+  margin: 0rem 0rem -1.25rem 0rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: #11252d;
+  border-top-style: groove;
+  border-left-style: groove;
+  border-right-style: groove;
+  border-color: #d4e8e1;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #d4e8e1;
+}
+
+.projects .projectsSkew {
+  background-color: #199bb1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .projectsSkew svg {
+  width: 100%;
+  height: 10vh;
+  margin-bottom: -0.55vh;
+  align-items: flex-end;
+  fill: #d4e8e1;
+}
+
+.projects .topRow {
+  display:flex;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.projects .bottomRow {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.projects .projectCard {
+  flex: 1 1 auto;
+  border: 1px solid black;
+  height: 30vh;
+}
+
+.animatedSquare {
+  width: 100%;
+  height: 15vh;
+  margin-top: 20px;
+  margin-bottom: -12.1vh;
+  filter: drop-shadow(0 -3px 1px #125665);
+}
+
+.animatedSquare .animatedSquarePath {
+  fill: #2fb7e7;
+  animation: animateSquare 3s linear infinite;
+}
+
+
+@keyframes animateSquare {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}

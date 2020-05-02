@@ -1,0 +1,125 @@
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #d4e8e1;
+}
+
+.skills h1 {
+  width: 40%;
+  align-self: center;
+  text-align: center;
+  transform: rotate(3deg);
+  margin: 3rem 0rem -1.25rem 0rem;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #d4e8e1;
+  color: #2fb7cf; /* Dark Blue */
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  border-left-style: dashed;
+  border-right-style: dashed;
+}
+
+.skills .slantSkill {
+  background-color: #125665;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills .slantSkill svg {
+  width: 100%;
+  height: 10vh;
+  margin-bottom: -0.5vh;
+  align-items: flex-end;
+  fill: #d4e8e1;
+}
+
+.skills .rowTech {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.languages {
+  text-align: center;
+  width: 13%;
+  /*border-bottom: 1px solid black;*/
+  /*border-left: 1px solid black;*/
+}
+
+.libraries, .tools, .relatedSkills {
+  width: 29%;
+  text-align: center;
+  /*border-bottom: 1px solid black;*/
+  /*border-left: 1px solid black;*/
+}
+
+.rowTech h4 {
+  /*border-bottom: 1px solid black;*/
+  /*border-left: 1px solid black;*/
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #125665;
+  color: #11252d; /* Dark Blue */
+}
+
+.skills .rowTech ul {
+  align-items: center; /* NEW */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  height: 50vh;
+  list-style-type: none;
+}
+
+.skills .rowTech ul li {
+  background: #d4e8e1;
+  color: #11252d;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  font-size: 0.85rem;
+  margin-left: -40px;
+  border: 1px solid #11252d;
+  transition: 0.3s;
+  font-size: 0.89rem;
+  letter-spacing: 0.05rem;
+}
+
+.skills .rowTech ul li:hover {
+  background: #11252d;;
+  color: #d4e8e1;
+  border: 1px solid #2fb7cf;
+  font-size: 1.2rem;
+}
+
+.wavy {
+  width: 100%;
+  height: 13vh;
+  align-items: flex-end;
+  filter: drop-shadow(0 -3px 1px #11252d);
+}
+
+.wavy path {
+  width: 100%;
+  fill: #199bb1;
+  animation: animateWavy 3s linear infinite;
+}
+
+@keyframes animateWavy {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
