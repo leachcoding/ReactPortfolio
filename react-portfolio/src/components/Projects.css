@@ -68,7 +68,7 @@
 }
 
 .animatedSquare .animatedSquarePath {
-  fill: #2fb7e7;
+  fill: #2fb7cf;
   animation: animateSquare 3s linear infinite;
 }
 
