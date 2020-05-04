@@ -27,6 +27,12 @@ const Projects = () => {
                 <li>Knex.js</li>
                 <li>SQL</li>
               </ul>
+              <p>This is a solo project that was built in preparation to teach and showcase React. The frontend has a specific focus on state management and react-router. The backend was made with Node.js as a simple backpack inventory management system, as well as a favorites storage for your favorite pokemon. User login/registry is present in the front end and back end.</p>
+              <div className='projectLinks'>
+                <a href=''>Source Code</a>
+                <a href=''>Live Demo</a>
+                <a href=''>Case Study</a>
+              </div>
             </div>
           </section>
           <section className='projectCard projectCard2'>
