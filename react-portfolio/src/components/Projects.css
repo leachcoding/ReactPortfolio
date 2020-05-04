@@ -41,22 +41,32 @@
 }
 
 .projects .topRow {
+  width: 95%;
+  margin: auto;
   display:flex;
-  margin-top: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  flex-direction: column;
 }
 
 .projects .bottomRow {
+  width: 95%;
+  margin: auto;
   display: flex;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  flex-direction: column;
 }
 
 .projects .projectCard {
-  flex: 1 1 auto;
+  width: 100%;
   border: 1px solid black;
-  height: 30vh;
+  height: 90vh;
+}
+
+.projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
+  display: flex;
+  margin-top: 5vh;
+}
+
+.projects .projectCard1 img, .projects .projectCard2 img, .projects .projectCard3 img, .projects .projectCard4 img, .projects .projectCard5 img, .projects .projectCard6 img {
+  width: 70%;
 }
 
 .animatedSquare {

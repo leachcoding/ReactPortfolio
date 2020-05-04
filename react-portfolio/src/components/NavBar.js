@@ -53,7 +53,7 @@ const NavBar = () => {
       </div>
 
       <div id='topScroll'>
-        <a href='#'>^</a>
+        <a href='/#'>^</a>
       </div>
     </div>
   )

@@ -13,24 +13,108 @@ const Projects = () => {
         </div>
         <div className='topRow'>
           <section className='projectCard projectCard1'>
-            Hi, I'm Project Card 1
+            <img src={require('../images/project-1.png')} alt="Pokedex Project" />
+            <div className='project1Info'>
+              <h4>Pokedex - Frontend & Backend</h4>
+              <h6>Tech Used</h6>
+              <ul>
+                <li>React.js</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Knex.js</li>
+                <li>SQL</li>
+              </ul>
+            </div>
           </section>
           <section className='projectCard projectCard2'>
-            Hi, I'm Project Card 2
+            <img src={require('../images/project-1.png')} alt="Pokedex Project" />
+            <div className='project1Info'>
+              <h4>Pokedex - Frontend & Backend</h4>
+              <h6>Tech Used</h6>
+              <ul>
+                <li>React.js</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Knex.js</li>
+                <li>SQL</li>
+              </ul>
+            </div>
           </section>
           <section className='projectCard projectCard3'>
-            Hi, I'm Project Card 3
+            <img src={require('../images/project-1.png')} alt="Pokedex Project" />
+            <div className='project1Info'>
+              <h4>Pokedex - Frontend & Backend</h4>
+              <h6>Tech Used</h6>
+              <ul>
+                <li>React.js</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Knex.js</li>
+                <li>SQL</li>
+              </ul>
+            </div>
           </section>
         </div>
         <div className='bottomRow'>
           <section className='projectCard projectCard4'>
-            Hi, I'm Project Card 4
+            <img src={require('../images/project-1.png')} alt="Pokedex Project" />
+            <div className='project1Info'>
+              <h4>Pokedex - Frontend & Backend</h4>
+              <h6>Tech Used</h6>
+              <ul>
+                <li>React.js</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Knex.js</li>
+                <li>SQL</li>
+              </ul>
+            </div>
           </section>
           <section className='projectCard projectCard5'>
-            Hi, I'm Project Card 5
+            <img src={require('../images/project-1.png')} alt="Pokedex Project" />
+            <div className='project1Info'>
+              <h4>Pokedex - Frontend & Backend</h4>
+              <h6>Tech Used</h6>
+              <ul>
+                <li>React.js</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Knex.js</li>
+                <li>SQL</li>
+              </ul>
+            </div>
           </section>
           <section className='projectCard projectCard6'>
-            Hi, I'm Project Card 6
+            <img src={require('../images/project-1.png')} alt="Pokedex Project" />
+            <div className='project1Info'>
+              <h4>Pokedex - Frontend & Backend</h4>
+              <h6>Tech Used</h6>
+              <ul>
+                <li>React.js</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Knex.js</li>
+                <li>SQL</li>
+              </ul>
+            </div>
           </section>
         </div>
         <svg className='animatedSquare' viewBox='0 0 100 100' preserveAspectRatio='none'>
