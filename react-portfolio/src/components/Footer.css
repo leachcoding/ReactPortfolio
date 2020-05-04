@@ -2,4 +2,38 @@
   width: 100%;
   margin: 0 auto;
   background-color: #11252d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.footer p {
+  width: 20%;
+  color: #2fb7e7;
+}
+
+.footer .footerSocial {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  border-left-style: double;
+  border-left-color: #d4e8e1;
+  padding: 1.5rem;
+}
+
+.footer .footerSocial a {
+  width: 30%;
+  text-align: center;
+  border-style: ridge;
+  border-color: #d4e8e1;
+  padding: 10px 0px 10px 0px;
+  text-decoration: none;
+  background-color: #2fb7e7;
+  color: #11252d;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #2fb7e7;
 }

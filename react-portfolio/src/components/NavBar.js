@@ -51,6 +51,10 @@ const NavBar = () => {
         <div className='hamburgerBar'></div>
         <div className='hamburgerBar'></div>
       </div>
+
+      <div id='topScroll'>
+        <a href='/#'>^</a>
+      </div>
     </div>
   )
 }

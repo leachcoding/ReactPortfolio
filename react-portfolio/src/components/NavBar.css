@@ -100,3 +100,28 @@
   width: 98%;
   z-index: 98;
 }
+
+#topScroll {
+  overflow: hidden;
+  background-color: white;
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 3%;
+  text-align: center;
+  z-index: 98;
+  top: 93vh;
+  left: 48vw;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+#topScroll:hover {
+  opacity:1;
+}
+
+#topScroll a {
+  font-weight: bold;
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #11252d;
+}
