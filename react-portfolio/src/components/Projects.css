@@ -57,7 +57,6 @@
 .projects .projectCard {
   width: 100%;
   border: 1px solid black;
-  height: 90vh;
 }
 
 .projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
