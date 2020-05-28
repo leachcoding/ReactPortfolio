@@ -5,7 +5,7 @@
   z-index: 99;
   top: 0;
   right: 0;
-  background-color: #252527;
+  background-color: #125665;
   overflow-x: hidden;
   transition: 0.8s;
   padding-top: 60px;
@@ -25,33 +25,36 @@
 .sidenav a:hover {
   color: #f1f1f1;
 }
+.sidenav a:nth-child(even):hover {
+  color: #2fb7cf;
+}
 
 .sidenav .navHome {
   color: white;
 }
 .sidenav .navAbout {
-  background-color: #dd1e2f;
+  background-color: #199bb1;
   color: black;
-  border-top: 1px solid darkred;
-  border-bottom: 1px solid darkred;
+  border-top: 1px solid #d4e8e1;
+  border-bottom: 1px solid #d4e8e1;
 }
 .sidenav .navProject {
-  background-color: #EBB035;
+  background-color: #d4e8e1;
   color: black;
-  border-top: 1px solid #9B870C;
-  border-bottom: 1px solid #9B870C;
+  border-top: 1px solid #d4e8e1;
+  border-bottom: 1px solid #d4e8e1;
 }
 .sidenav .navCourse {
-  background-color: #06A2CB;
+  background-color: #199bb1;
   color: black;
-  border-top: 1px solid darkblue;
-  border-bottom: 1px solid darkblue;
+  border-top: 1px solid #d4e8e1;
+  border-bottom: 1px solid #d4e8e1;
 }
 .sidenav .navBlog {
-  background-color: #218559;
+  background-color: #d4e8e1;
   color: black;
-  border-top: 1px solid darkgreen;
-  border-bottom: 1px solid darkgreen;
+  border-top: 1px solid #d4e8e1;
+  border-bottom: 1px solid #d4e8e1;
 }
 
 .sidenav .closebtn {
@@ -66,25 +69,29 @@
   color: lightgrey;
 }
 
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 .navigation .socialMedia .socialIcons {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   width: 100%;
-  border: 1px solid white;
 }
 
 .navigation .socialMedia .socialIcons a img {
   width: 100%;
   height: 100%;
 }
+.navigation .socialMedia p {
+  text-align: center;
+  font-size: 1rem;
+  color: #d4e8e1;
+}
 
+.navigation .socialMedia .resume {
+  color: #d4e8e1;
+}
+.navigation .socialMedia .resume:hover {
+  color: black;
+}
 .hamburgerBar {
   width: 35px;
   height: 5px;
@@ -124,4 +131,35 @@
   font-size: 1.75rem;
   text-decoration: none;
   color: #11252d;
+}
+
+@media (max-width: 850px) {
+
+}
+
+@media (max-width: 500px) {
+  #hamburgerMain {
+    width: 100%;
+  }
+  .sidenav {
+    padding-top: 10rem;
+  }
+  .sidenav a {
+    font-size: 1.25rem;
+  }
+  .navigation .socialMedia .socialIcons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navigation .socialMedia .socialIcons a img {
+    width: 33%;
+    height: 100%;
+  }
+  #topScroll {
+    width: 7%;
+    left: 44vw;
+  }
 }

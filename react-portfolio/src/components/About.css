@@ -38,7 +38,6 @@
   width: 100%;
   padding: 5px;
   margin-left: 10px;
-  text-indent: 2rem;
   color: #11252d; /* Dark Blue */
   letter-spacing: 0.1rem;
 }
@@ -106,5 +105,105 @@
   }
   100% {
     d: path('M 0 30 Q 15 0, 30 30 L 30 130 Q 45 160, 60 130 L 60 65 Q 75 35, 90 65 L 90 110 Q 105 140, 120 110 L 120, 30 Q 135 0 150 30 L 150 120 Q 165 150, 180 120 L 180 30 Q 195 0 210 30 L 210 120 Q 225 150, 240 120 L 240 70 Q 255 40, 270 70 Q 285 100, 300 70 L 300 30 Q 315 0, 330 30 L 330 105 Q 345 135, 360 105 Q 375 75, 390 105 L 390 120 Q 405 150, 420 120 L 420 60 Q 435 30, 450 60 L 450 90 Q 465 120, 480 90 L 480 50 Q 495 20, 510 50 L 510 120 Q 525 150, 540 120 L 540 30 Q 555 0, 570 30 Q 585 60, 600 30 Q 615 0, 630 30 L 630 120 Q 645 150, 660 120 L 660 50 Q 675 20, 690 50 L 690 75 Q 705 105, 720 75 L 720 30 Q 735 0, 750 30 L 750 115 Q 765 145, 780 115 L 780 40 Q 795 10, 810 40 Q 825 70, 840 40 L 840 40 Q 855 10, 870 40 Q 885 70, 900 40 Q 915 10, 930 40 L 930 120 Q 945 150, 960 120 L 960 30 Q 975 0, 990 30 L 990 100 Q 1005 130, 1020 100 Q 1035 70, 1050 100 Q 1065 130, 1080 100 L 1080 35 Q 1095 5, 1110 35 L 1110 110 Q 1125 140, 1140 110 L 1140 30 Q 1155 0, 1170 30 L 1170 115 Q 1185 145, 1200 115 L 1200 30Q 1215 0, 1230 30 Q 1245 60, 1260 30 L 1260 150 L 0 150 Z');
+  }
+}
+@media (min-width: 851px) {
+  .about svg .animatedAngledPathMed {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .about .aboutTop {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .aboutTop img {
+    width: 80%;
+  }
+  .dripContainer .dripPath1 {
+    d: path('M 0 30 Q 30 0, 60 30 L 60 80 Q 90 110, 120 80 L 120 40 Q 150 10, 180 40 Q 210 70, 240 40 L 240 30 Q 270 0, 300 30 L 300 110 Q 330 140, 360 110 L 360 75 Q 390 45, 420 75 L 420 95 Q 450 125, 480 95 L 480 35 Q 510 5, 540 35 L 540 80 Q 570 110, 600 80 Q 630 50, 660 80 Q 690 110, 720 80 L 720 40 Q 750 10, 780 40 L 780 60 Q 810 90, 840 60 L 840 20 Q 870 -10, 900 20 L 900 60 Q 930 90, 960 60 Q 990 30, 1020 60 L 1020 100 Q 1050 130, 1080 100 L 1080 30 Q 1110 0, 1140 30 L 1140 75 Q 1170 105, 1200 75 L 1200 30 Q 1230 0, 1260 30 L 1260 150 L 0 150 Z');
+  }
+  .dripContainer svg path {
+    animation: 4s dripEffect linear infinite alternate;
+  }
+  @keyframes dripEffect {
+    0% {
+
+    }
+    100% {
+      d: path('M 0 30 Q 30 0, 60 30 L 60 40 Q 90 70, 120 40 L 120 40 Q 150 10, 180 40 Q 210 70, 240 40 L 240 0 Q 270 -30, 300 0 L 300 110 Q 330 140, 360 110 L 360 55 Q 390 25, 420 55 L 420 105 Q 450 145, 480 105 L 480 35 Q 510 5, 540 35 L 540 50 Q 570 80, 600 50 Q 630 20, 660 50 Q 690 80, 720 50 L 720 40 Q 750 10, 780 40 L 780 90 Q 810 120, 840 90 L 840 20 Q 870 -10, 900 20 L 900 60 Q 930 90, 960 60 Q 990 30, 1020 60 L 1020 100 Q 1050 130, 1080 100 L 1080 -20 Q 1110 -50, 1140 -20 L 1140 75 Q 1170 105, 1200 75 L 1200 15 Q 1230 -15, 1260 15 L 1260 150 L 0 150 Z')
+    }
+  }
+  .about svg .animatedAngledPath {
+    display: none;
+  }
+  .about .animateAngle {
+    margin-bottom: -6rem;
+  }
+  .about svg .animatedAngledPathMed {
+    display: visible;
+    fill: #125665;
+    animation: animateAngle 3s linear infinite;
+  }
+  @keyframes animateAngle {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .about .aboutTop img {
+    width: 100%;
+  }
+  .about .aboutTop p {
+    margin-left: -10px;
+  }
+  .dripContainer .dripPath1 {
+    d: path('M 0 30 Q 50 0, 100 30 L 100 80 Q 150 110, 200 80 L 200 50 Q 250 20, 300 50 L 300 60 Q 350 90, 400 60 L 400 30 Q 450 0, 500 30 L 500 110 Q 550 140, 600 110 L 600 45 Q 650 15, 700 45 Q 750 75, 800 45 L 800 30 Q 850 0, 900 30 L 900 65 Q 950 95, 1000 65 L 1000 50 Q 1050 20, 1100 50 L 1100 115 Q 1150 145, 1200 115 L 1200 30 Q 1250 0, 1300 30 L 1300 150 L 0 150 Z');
+  }
+  @keyframes dripEffect {
+    0% {
+
+    }
+    100% {
+      d: path('M 0 0 Q 50 -30, 100 0 L 100 40 Q 150 70, 200 40 L 200 10 Q 250 -20, 300 10 L 300 90 Q 350 120, 400 90 L 400 30 Q 450 0, 500 30 L 500 110 Q 550 140, 600 110 L 600 45 Q 650 15, 700 45 Q 750 75, 800 45 L 800 0 Q 850 -30, 900 0 L 900 85 Q 950 115, 1000 85 L 1000 50 Q 1050 20, 1100 50 L 1100 125 Q 1150 155, 1200 125 L 1200 0 Q 1250 -30, 1300 0 L 1300 150 L 0 150 Z')
+    }
+  }
+}
+/* iPad */
+@media (max-width: 768px) and (max-height: 1024px) {
+  .dripContainer svg {
+    margin-bottom: -0.15rem;
+  }
+  .dripContainer {
+    margin-bottom: 1rem;
+  }
+}
+/* iPhone 6/7/8 and 6/7/8 plus -- works for Pixel 2 and Pixel 2 XL*/
+@media (max-width:414px) {
+  .dripContainer svg {
+    margin-bottom: -0.15rem;
+  }
+  .dripContainer {
+    margin-bottom: 1rem;
+  }
+}
+
+/* iPad Pro */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .dripContainer svg {
+    height: 10vh;
+    margin-bottom: -0.3rem;
+  }
+  .dripContainer {
+    height: 20vh;
+    margin-bottom: 1rem;
   }
 }
