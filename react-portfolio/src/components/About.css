@@ -40,8 +40,18 @@
   margin-left: 10px;
   color: #11252d; /* Dark Blue */
   letter-spacing: 0.1rem;
+  line-height: 1.75rem;
 }
 
+.about p #sequenceText{
+  display: inline-block;
+  text-align: center;
+  width: 7rem;
+  background-color: #125665;
+  color: #d4e8e1;
+  box-shadow: 1px 4px 1px #11252d;
+  padding: 0.125rem 0.25rem 0.125rem 0.25rem;
+}
 .about svg {
   width: 100%;
   height: 15vh;

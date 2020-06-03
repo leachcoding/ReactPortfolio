@@ -61,7 +61,7 @@
   box-shadow: 2px 2px 6px #11252d;
 }
 
-.projects .projectCard h4, .projects .projectCard h6, .projects .projectCard p {
+.projects .projectCard h4, .projects .projectCard h5 {
   text-align: center;
 }
 
@@ -72,10 +72,11 @@
 }
 
 .projects .projectCard1 img, .projects .projectCard2 img, .projects .projectCard3 img, .projects .projectCard4 img, .projects .projectCard5 img, .projects .projectCard6 img {
-  width: 70%;
+  width: 60%;
   border-radius: 0.5rem;
 }
 .project1Info {
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -83,13 +84,40 @@
   height: 50%;
 }
 .projectLinks {
+  display: flex;
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  justify-content: space-around;
   text-align: center;
 }
 
-.projects .projectCard .project1Info .projectsLinks a{
-  border: 1px solid black !important;
-  margin: 5px;
+.projectLink{
+  width: 40%;
+  text-decoration: none;
+  color: #11252d;
+  box-shadow: 2px -4px 1px #11252d;
+  border: 1px solid #125665;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  transition: 0.3s;
+}
+
+.srcLink {
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: #11252d;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    transition: 0.3s;
+}
+
+.srcLink:hover {
+  background-color: #125665;
+  color: #d4e8e1;
+}
+
+.projectLink:hover {
+  background-color: #125665;
+  color: #d4e8e1;
 }
 
 .dayProjects {
@@ -152,18 +180,10 @@
   width: 20%;
 }
 
-@media (max-width: 850px) {
-
-}
-
-@media (max-width: 500px) {
-  .numRow {
-    width: 98%;
-  }
+@media (max-width: 750px) {
   .projects h1 {
-    width: 50%;
-    transform: rotate(-6.5deg);
-    margin-bottom: -1.6rem;
+    width: 45%;
+    transform: rotate(-4.5deg);
   }
   .projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
     display: flex;
@@ -190,6 +210,17 @@
   .projectLinks a {
     padding: 1px 6px 1px 6px;
     border: 1px solid black;
+  }
+}
+
+@media (max-width: 500px) {
+  .numRow {
+    width: 98%;
+  }
+  .projects h1 {
+    width: 50%;
+    transform: rotate(-6.5deg);
+    margin-bottom: -1.6rem;
   }
 
   .dayProjects .dayProjectsList .dayProjectCard {
