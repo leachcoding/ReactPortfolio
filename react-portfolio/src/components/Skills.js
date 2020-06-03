@@ -8,7 +8,7 @@ const Skills = () => {
         <div className='slantSkill'>
           <h1>SKILLS AND TECHNOLOGY</h1>
           <svg viewBox='0 0 100 100' preserveAspectRatio="none">
-            <polygon points='0,0 100,100 0,100'/>
+            <polygon points='0,0 110,100 0,100'/>
           </svg>
         </div>
         <section className='rowTech'>

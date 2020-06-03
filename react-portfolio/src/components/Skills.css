@@ -9,7 +9,7 @@
   width: 50%;
   align-self: center;
   text-align: center;
-  transform: rotate(3deg);
+  transform: rotate(2.9deg);
   margin: 3rem 0rem -1.25rem 0rem;
   text-decoration: underline;
   text-decoration-style: wavy;
@@ -30,7 +30,7 @@
 
 .skills .slantSkill svg {
   width: 100%;
-  height: 10vh;
+  height: 9vh;
   margin-bottom: -0.5vh;
   align-items: flex-end;
   fill: #d4e8e1;
@@ -130,13 +130,12 @@
 @media (max-width: 1000px) {
   .skills h1 {
     width: 60%;
-    transform: rotate(5.1deg);
+    transform: rotate(3.7deg);
   }
 }
 @media (max-width: 850px) {
   .skills h1 {
     width: 70%;
-    transform: rotate(5.5deg);
   }
   .skills .rowTech {
     display: flex;
@@ -157,11 +156,18 @@
   }
 }
 
+@media (max-width: 700px) {
+  .skills h1 {
+    width: 80%;
+    transform: rotate(5.5deg);
+  }
+}
+
 @media (max-width: 500px) {
   .skills h1 {
     width: 90%;
     font-size: 1.5rem;
-    transform: rotate(9deg);
+    transform: rotate(7.5deg);
     margin-bottom: -1.65rem;
   }
   .languages, .libraries, .tools, .relatedSkills {

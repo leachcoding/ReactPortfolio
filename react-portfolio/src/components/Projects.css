@@ -11,7 +11,7 @@
   width: 25%;
   align-self: center;
   text-align: center;
-  transform: rotate(-3.5deg);
+  transform: rotate(-3deg);
   margin: 0rem 0rem -1.25rem 0rem;
   font-size: 2rem;
   letter-spacing: 0.2rem;
@@ -34,7 +34,7 @@
 
 .projects .projectsSkew svg {
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   margin-bottom: -0.55vh;
   align-items: flex-end;
   fill: #d4e8e1;
@@ -56,16 +56,40 @@
 
 .projects .projectCard {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #199bb1;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 6px #11252d;
+}
+
+.projects .projectCard h4, .projects .projectCard h6, .projects .projectCard p {
+  text-align: center;
 }
 
 .projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
   display: flex;
   margin-top: 5vh;
+  width: 100%;
 }
 
 .projects .projectCard1 img, .projects .projectCard2 img, .projects .projectCard3 img, .projects .projectCard4 img, .projects .projectCard5 img, .projects .projectCard6 img {
   width: 70%;
+  border-radius: 0.5rem;
+}
+.project1Info {
+  display: flex;
+  flex-direction: column;
+}
+.project1Info p{
+  height: 50%;
+}
+.projectLinks {
+  width: 100%;
+  text-align: center;
+}
+
+.projects .projectCard .project1Info .projectsLinks a{
+  border: 1px solid black !important;
+  margin: 5px;
 }
 
 .dayProjects {
@@ -77,13 +101,14 @@
 }
 
 .dayProjects .dayProjectsList {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .dayProjects .dayProjectsList .dayProjectCard {
-  width: 18%;
+  width: 19%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,7 +145,7 @@
 }
 
 .numRow {
-  width: 50%;
+  width: 100%;
   display: flex;
 }
 .numRow button {
@@ -137,15 +162,15 @@
   }
   .projects h1 {
     width: 50%;
-    transform: rotate(-8.5deg);
-    margin-bottom: -2rem;
+    transform: rotate(-6.5deg);
+    margin-bottom: -1.6rem;
   }
   .projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
     display: flex;
     flex-direction: column;
   }
   .projects .projectCard1 img, .projects .projectCard2 img, .projects .projectCard3 img, .projects .projectCard4 img, .projects .projectCard5 img, .projects .projectCard6 img {
-    width: 98%;
+    width: 100%;
   }
   .projects {
     width: 100%;

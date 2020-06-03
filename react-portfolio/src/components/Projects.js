@@ -325,7 +325,7 @@ const Projects = () => {
     }
   ]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [projectsPerPage, setProjectsPerPage] = useState(15);
+  const [projectsPerPage, setProjectsPerPage] = useState(10);
 
   const paginationClickNext = () => {
     setCurrentPage(currentPage + 1);
@@ -353,7 +353,7 @@ const Projects = () => {
         <div className='projectsSkew'>
           <h1>PROJECTS</h1>
           <svg viewBox='0 0 100 100' preserveAspectRatio="none">
-            <polygon points='0,100 100,100 100,0'/>
+            <polygon points='-10,100 100,100 100,0'/>
           </svg>
         </div>
         <div className='topRow'>
@@ -372,11 +372,11 @@ const Projects = () => {
                 <li>Knex.js</li>
                 <li>SQL</li>
               </ul>
-              <p>This is a solo project that was built in preparation to teach and showcase React. The frontend has a specific focus on state management and react-router. The backend was made with Node.js as a simple backpack inventory management system, as well as a favorites storage for your favorite pokemon. User login/registry is present in the front end and back end.</p>
+              <p>This is a solo project that was built in preparation to teach and showcase React. The frontend has a specific focus on state management with hooks and react-router. The backend was made with Node.js as a simple backpack inventory management system, as well as a favorites storage for your favorite pokemon. User login/registry is present with JWT Authentication. Pagination for the following -- pokemon, moves, items, types, abilities, locations, and machines. Search forms for the following -- pokemon, moves, items, types, abilities, locations, and machines.</p>
               <div className='projectLinks'>
-                <a href=''>Source Code</a>
-                <a href=''>Live Demo</a>
-                <a href=''>Case Study</a>
+                <a href='#'>Source Code</a>
+                <a href='#'>Live Demo</a>
+
               </div>
             </div>
           </section>
@@ -390,7 +390,7 @@ const Projects = () => {
                 <li>GeoJSON</li>
                 <li>Brooklyn Integers</li>
               </ul>
-              <p>This is a open source project created by Simon Willison, the co-founder of Django. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
+              <p>This is a open source project created by <a href='github.com'>Simon Willison</a>, the co-founder of Django. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
               <div className='projectLinks'>
                 <a href=''>Source Code</a>
                 <a href=''>Live Demo</a>
@@ -398,6 +398,8 @@ const Projects = () => {
               </div>
             </div>
           </section>
+        </div>
+        <div className='bottomRow'>
           <section className='projectCard projectCard3'>
             <img src={require('../images/project-1.png')} alt="Pokedex Project" />
             <div className='project1Info'>
@@ -413,7 +415,7 @@ const Projects = () => {
                 <li>Knex.js</li>
                 <li>SQL</li>
               </ul>
-              <p>This is a open source project created by Simon Willison, the co-founder of Django. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
+              <p>This is a Labs project in which me, and a team of 4 others, inherited a dashboard todo list application to update and improve upon. This is currently on its 1.3 release. I have been heavily involved in the backend, creating an entirely new user schema, categories table, and updated task list for the dashboard. On the frontend, I have worked significantly on CSS redesigns to go upon our new Figma design.</p>
               <div className='projectLinks'>
                 <a href=''>Source Code</a>
                 <a href=''>Live Demo</a>
@@ -421,8 +423,6 @@ const Projects = () => {
               </div>
             </div>
           </section>
-        </div>
-        <div className='bottomRow'>
           <section className='projectCard projectCard4'>
             <img src={require('../images/anytime-fitness.JPG')} alt="Pokedex Project" />
             <div className='project1Info'>
@@ -438,30 +438,7 @@ const Projects = () => {
                 <li>Knex.js</li>
                 <li>SQL</li>
               </ul>
-              <p>This is a open source project created by Simon Willison, the co-founder of Django. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
-              <div className='projectLinks'>
-                <a href=''>Source Code</a>
-                <a href=''>Live Demo</a>
-                <a href=''>Case Study</a>
-              </div>
-            </div>
-          </section>
-          <section className='projectCard projectCard5'>
-            <img src={require('../images/project-1.png')} alt="Pokedex Project" />
-            <div className='project1Info'>
-              <h4>React Portfolio - Frontend</h4>
-              <h6>Tech Used</h6>
-              <ul>
-                <li>React.js</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Knex.js</li>
-                <li>SQL</li>
-              </ul>
-              <p>This is a open source project created by Simon Willison, the co-founder of Django. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
+              <p>This is a project where me and a team worked to build a fitness application to create classes as instructors, and as clients, sign up for them. I build the entire backend for this application, creating users as instructors or clients, and an entire table for classes themselves.</p>
               <div className='projectLinks'>
                 <a href=''>Source Code</a>
                 <a href=''>Live Demo</a>

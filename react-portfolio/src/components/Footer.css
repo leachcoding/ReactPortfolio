@@ -37,3 +37,21 @@
   text-decoration: none;
   color: #2fb7e7;
 }
+
+@media (max-width: 900px) {
+  .footer .footerSocial {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .footerSocial {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer .footerSocial {
+    width: 60%;
+  }
+}
