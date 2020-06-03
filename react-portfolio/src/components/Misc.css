@@ -10,20 +10,43 @@
   display: flex;
   flex-direction: column;
   background-color: #2fb7cf;
+  align-items: center;
+}
+
+.misc .pointedDiv h1 {
+  width: 50%;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  border-bottom-style: ridge;
 }
 
 .misc .rowMisc {
   display: flex;
+  justify-content: center;
 }
 
 .misc .rowMisc .blogMisc {
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
+  align-items: center;
+  flex: 2 1 auto;
 }
 
 .misc .rowMisc .courseMisc {
   display: flex;
   flex-direction: column;
-  flex: 2 1 auto;
+  align-items: center;
+  flex: 3 1 auto;
+}
+
+.misc a {
+  text-decoration: none;
+  color: #11252d;
+  transition: 0.3s;
+}
+
+.misc a:hover {
+  background-color: #2fb7cf;
+  color: #d4e8e1;
 }

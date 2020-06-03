@@ -11,7 +11,7 @@
   width: 25%;
   align-self: center;
   text-align: center;
-  transform: rotate(-3.5deg);
+  transform: rotate(-3deg);
   margin: 0rem 0rem -1.25rem 0rem;
   font-size: 2rem;
   letter-spacing: 0.2rem;
@@ -34,7 +34,7 @@
 
 .projects .projectsSkew svg {
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   margin-bottom: -0.55vh;
   align-items: flex-end;
   fill: #d4e8e1;
@@ -56,16 +56,102 @@
 
 .projects .projectCard {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #199bb1;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 6px #11252d;
+}
+
+.projects .projectCard h4, .projects .projectCard h5 {
+  text-align: center;
+  height: 5%;
 }
 
 .projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
   display: flex;
   margin-top: 5vh;
+  width: 100%;
 }
 
 .projects .projectCard1 img, .projects .projectCard2 img, .projects .projectCard3 img, .projects .projectCard4 img, .projects .projectCard5 img, .projects .projectCard6 img {
-  width: 70%;
+  width: 60%;
+  border-radius: 0.5rem;
+}
+.project1Info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.project1Info ul {
+  width: 95%;
+  margin: auto;
+}
+.project1Info ul li {
+  background: #d4e8e1;
+  color: #11252d;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  font-size: 0.85rem;
+  margin-left: -30px;
+  border: 1px solid #11252d;
+  transition: 0.3s;
+  font-size: 0.89rem;
+  letter-spacing: 0.1rem;
+}
+
+.project1Info ul li:hover {
+  background: #11252d;
+  color: #d4e8e1;
+  border: 0.3rem ridge #125665;
+  font-size: 1.2rem;
+  border-top-color: #2fb7cf;
+  border-left-color: #2fb7cf;
+}
+
+.project1Info p{
+  width: 95%;
+  height: 70%;
+  margin: auto;
+}
+.projectLinks {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.projectLink{
+  width: 40%;
+  text-decoration: none;
+  color: #11252d;
+  box-shadow: 2px -4px 1px #11252d;
+  border: 1px solid #125665;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  transition: 0.3s;
+}
+
+.srcLink {
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: #11252d;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    transition: 0.3s;
+}
+
+.srcLink:hover {
+  background-color: #125665;
+  color: #d4e8e1;
+}
+
+.projectLink:hover {
+  background-color: #125665;
+  color: #d4e8e1;
 }
 
 .dayProjects {
@@ -77,13 +163,14 @@
 }
 
 .dayProjects .dayProjectsList {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .dayProjects .dayProjectsList .dayProjectCard {
-  width: 18%;
+  width: 19%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,15 +207,36 @@
 }
 
 .numRow {
-  width: 50%;
+  width: 100%;
   display: flex;
 }
 .numRow button {
   width: 20%;
 }
 
-@media (max-width: 850px) {
-
+@media (max-width: 750px) {
+  .projects h1 {
+    width: 45%;
+    transform: rotate(-4.5deg);
+  }
+  .projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .projectCard1 img, .projects .projectCard2 img, .projects .projectCard3 img, .projects .projectCard4 img, .projects .projectCard5 img, .projects .projectCard6 img {
+    width: 100%;
+  }
+  .project1Info {
+    width: 100%;
+  }
+  .projects {
+    width: 100%;
+    text-align: center;
+  }
+  .projectLinks a {
+    padding: 1px 6px 1px 6px;
+    border: 1px solid black;
+  }
 }
 
 @media (max-width: 500px) {
@@ -137,34 +245,8 @@
   }
   .projects h1 {
     width: 50%;
-    transform: rotate(-8.5deg);
-    margin-bottom: -2rem;
-  }
-  .projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
-    display: flex;
-    flex-direction: column;
-  }
-  .projects .projectCard1 img, .projects .projectCard2 img, .projects .projectCard3 img, .projects .projectCard4 img, .projects .projectCard5 img, .projects .projectCard6 img {
-    width: 98%;
-  }
-  .projects {
-    width: 100%;
-    text-align: center;
-  }
-  .projects ul {
-    width: 93%;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -0.6rem;
-  }
-  .projects ul li {
-    width: 23%;
-    border: 1px solid black;
-  }
-  .projectLinks a {
-    padding: 1px 6px 1px 6px;
-    border: 1px solid black;
+    transform: rotate(-6.5deg);
+    margin-bottom: -1.6rem;
   }
 
   .dayProjects .dayProjectsList .dayProjectCard {

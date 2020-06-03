@@ -325,7 +325,7 @@ const Projects = () => {
     }
   ]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [projectsPerPage, setProjectsPerPage] = useState(15);
+  const [projectsPerPage, setProjectsPerPage] = useState(10);
 
   const paginationClickNext = () => {
     setCurrentPage(currentPage + 1);
@@ -353,7 +353,7 @@ const Projects = () => {
         <div className='projectsSkew'>
           <h1>PROJECTS</h1>
           <svg viewBox='0 0 100 100' preserveAspectRatio="none">
-            <polygon points='0,100 100,100 100,0'/>
+            <polygon points='-10,100 100,100 100,0'/>
           </svg>
         </div>
         <div className='topRow'>
@@ -361,7 +361,7 @@ const Projects = () => {
             <img src={require('../images/project-1.png')} alt="Pokedex Project" />
             <div className='project1Info'>
               <h4>Pokedex - Frontend & Backend</h4>
-              <h6>Tech Used</h6>
+              <h5>Tech Used</h5>
               <ul>
                 <li>React.js</li>
                 <li>JavaScript</li>
@@ -372,62 +372,37 @@ const Projects = () => {
                 <li>Knex.js</li>
                 <li>SQL</li>
               </ul>
-              <p>This is a solo project that was built in preparation to teach and showcase React. The frontend has a specific focus on state management and react-router. The backend was made with Node.js as a simple backpack inventory management system, as well as a favorites storage for your favorite pokemon. User login/registry is present in the front end and back end.</p>
+              <p>This is a solo project that was built in preparation to teach and showcase React for my students (and others who are interested). The frontend has a specific focus on state management with hooks and react-router. The backend was made with Node.js as a simple backpack inventory management system, as well as a favorites storage for your favorite pokemon. User login/registry is present with JWT Authentication. Pagination for the following -- pokemon, moves, items, types, abilities, locations, and machines. Search forms for the following -- pokemon, moves, items, types, abilities, locations, and machines.</p>
               <div className='projectLinks'>
-                <a href=''>Source Code</a>
-                <a href=''>Live Demo</a>
-                <a href=''>Case Study</a>
+                <a className='projectLink' href='https://github.com/leachcoding/PokedexReact'>Source Code</a>
+                <a className='projectLink' href='https://nervous-brown-c1db21.netlify.app/'>Live Demo</a>
               </div>
             </div>
           </section>
           <section className='projectCard projectCard2'>
-            <img src={require('../images/cryptoDatabase.JPG')} alt="Pokedex Project" />
+            <img src={require('../images/cryptoDatabase.JPG')} alt="Cryptozoology Database Schema" />
             <div className='project1Info'>
               <h4>Cryptozoology - Open Source Backend</h4>
-              <h6>Tech Used</h6>
+              <h5>Tech Used</h5>
               <ul>
                 <li>Python</li>
                 <li>GeoJSON</li>
                 <li>Brooklyn Integers</li>
               </ul>
-              <p>This is a open source project created by Simon Willison, the co-founder of Django. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
+              <p>This is a open source project created by <a className='srcLink' href='https://github.com/simonw'>Simon Willison</a>. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
               <div className='projectLinks'>
-                <a href=''>Source Code</a>
-                <a href=''>Live Demo</a>
-                <a href=''>Case Study</a>
-              </div>
-            </div>
-          </section>
-          <section className='projectCard projectCard3'>
-            <img src={require('../images/project-1.png')} alt="Pokedex Project" />
-            <div className='project1Info'>
-              <h4>Get2It - Frontend & Backend</h4>
-              <h6>Tech Used</h6>
-              <ul>
-                <li>React.js</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Knex.js</li>
-                <li>SQL</li>
-              </ul>
-              <p>This is a open source project created by Simon Willison, the co-founder of Django. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
-              <div className='projectLinks'>
-                <a href=''>Source Code</a>
-                <a href=''>Live Demo</a>
-                <a href=''>Case Study</a>
+                <a className='projectLink' href='https://github.com/leachcoding/cryptozoology'>Source Code</a>
+                <a className='projectLink' href='https://cryptids.datasettes.com/'>Live Demo</a>
               </div>
             </div>
           </section>
         </div>
         <div className='bottomRow'>
-          <section className='projectCard projectCard4'>
-            <img src={require('../images/anytime-fitness.JPG')} alt="Pokedex Project" />
+          <section className='projectCard projectCard3'>
+            <img src={require('../images/get2it.png')} alt="Get 2 It Signup / Login Example Photo" />
             <div className='project1Info'>
-              <h4>Anytime Fitness - Backend</h4>
-              <h6>Tech Used</h6>
+              <h4>Get2It - Frontend & Backend</h4>
+              <h5>Tech Used</h5>
               <ul>
                 <li>React.js</li>
                 <li>JavaScript</li>
@@ -438,19 +413,18 @@ const Projects = () => {
                 <li>Knex.js</li>
                 <li>SQL</li>
               </ul>
-              <p>This is a open source project created by Simon Willison, the co-founder of Django. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
+              <p>This is a Labs project in which me, and a team of 4 others, inherited a dashboard todo list application to update and improve upon. This is currently on its 1.3 release. I have been heavily involved in the backend, writing documentation, creating an entirely new user schema, categories table, and updated task list for the dashboard, with JWT Authentication for the login/registry, as well as regular changes to update ios/web integration. On the frontend, I have worked significantly on CSS redesigns to go upon our new Figma re-design.</p>
               <div className='projectLinks'>
-                <a href=''>Source Code</a>
-                <a href=''>Live Demo</a>
-                <a href=''>Case Study</a>
+                <a className='projectLink' href='https://github.com/orgs/Lambda-School-Labs/teams/labs-pt9-get2it/repositories'>Source Code</a>
+                <a className='projectLink' href='https://master.d2aj6lilolim7e.amplifyapp.com/login'>Live Demo</a>
               </div>
             </div>
           </section>
-          <section className='projectCard projectCard5'>
-            <img src={require('../images/project-1.png')} alt="Pokedex Project" />
+          <section className='projectCard projectCard4'>
+            <img src={require('../images/anytime-fitness.JPG')} alt="Anytime Fitness" />
             <div className='project1Info'>
-              <h4>React Portfolio - Frontend</h4>
-              <h6>Tech Used</h6>
+              <h4>Anytime Fitness - Backend</h4>
+              <h5>Tech Used</h5>
               <ul>
                 <li>React.js</li>
                 <li>JavaScript</li>
@@ -461,11 +435,10 @@ const Projects = () => {
                 <li>Knex.js</li>
                 <li>SQL</li>
               </ul>
-              <p>This is a open source project created by Simon Willison, the co-founder of Django. I am personally extremely interested in the entire cryptozoologocal field, with a heavy focus in Bigfoot and other named unknown primate species. I was looking for a backend I could work with to make a front end cryptid application, and this was the best/only backend I could find with a dataset that I really enjoyed and could see the expansion of. I have been heavily involved in creature documentation, GeoJSON creation for individual cryptids, as well as dataset creation for individual creatures for this project, and couldn't be more proud to have found something I am so passionately interested in shared in earnest with others. This is my showcase piece I am most happy to display.</p>
+              <p>This is a project where me and a team worked to build a fitness application to create classes as instructors, and as clients, sign up for them using JWT Authentication. I built the entire backend for this application, creating users as instructors or clients, and an entire table for classes themselves, with a signup system using patch requests for the classes.</p>
               <div className='projectLinks'>
-                <a href=''>Source Code</a>
-                <a href=''>Live Demo</a>
-                <a href=''>Case Study</a>
+                <a className='projectLink' href='https://github.com/Build-Week-PT-Anytime-Fitness-1/Backend'>Source Code</a>
+                <a className='projectLink' href='https://anywhere-fitness1.herokuapp.com/'>Live Demo</a>
               </div>
             </div>
           </section>
