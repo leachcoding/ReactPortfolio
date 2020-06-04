@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import Landing from './components/Landing';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
