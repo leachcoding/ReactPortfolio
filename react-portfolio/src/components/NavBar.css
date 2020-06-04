@@ -104,7 +104,7 @@
   background-color: white;
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
-  width: 98%;
+  width: 100%;
   z-index: 98;
 }
 

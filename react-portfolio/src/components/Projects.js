@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './Projects.css';
 
 const Projects = () => {
-  const [dayProject, setDayProject] = useState([
+  const [dayProject] = useState([
     {
       imgSrc: 'https://via.placeholder.com/150',
       title: 'NASA Photo of the Day',
@@ -325,15 +325,15 @@ const Projects = () => {
     }
   ]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [projectsPerPage, setProjectsPerPage] = useState(10);
+  const [projectsPerPage] = useState(10);
 
-  const paginationClickNext = () => {
-    setCurrentPage(currentPage + 1);
-  }
+  // const paginationClickNext = () => {
+  //   setCurrentPage(currentPage + 1);
+  // }
 
-  const paginationClickPrev = () => {
-    setCurrentPage(currentPage - 1)
-  }
+  // const paginationClickPrev = () => {
+  //   setCurrentPage(currentPage - 1)
+  // }
   // Logic for displaying current projects
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
@@ -399,7 +399,7 @@ const Projects = () => {
         </div>
         <div className='bottomRow'>
           <section className='projectCard projectCard3'>
-            <img src={require('../images/get2it.png')} alt="Get 2 It Signup / Login Example Photo" />
+            <img src={require('../images/get2it.png')} alt="Get 2 It Signup / Login Example" />
             <div className='project1Info'>
               <h4>Get2It - Frontend & Backend</h4>
               <h5>Tech Used</h5>
@@ -457,7 +457,7 @@ const Projects = () => {
             {currentProjects.map(project => {
               return(
                 <div className='dayProjectCard'>
-                  <img src={project.imgSrc} />
+                  <img src={project.imgSrc} alt='Day Project'/>
                   <h5>{project.title}</h5>
                 </div>
               )
