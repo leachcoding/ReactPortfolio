@@ -445,7 +445,7 @@ const Projects = () => {
         </div>
         <section className="dayProjects">
           <h3>Daily Projects</h3>
-          <p>Please keep in mind these projects are projects that took more often than not just a day to complete, so keep that context in mind judging other important concepts like testing, CSS, responsive design, other browser compatability, etc. These projects were typically done to showcase, explain, or learn singular topics, and the work I think reflects that in their more simplistic scope.</p>
+          <p>These projects are projects that took more often than not just a day to complete, so keep that context in mind judging other important concepts like testing, CSS, responsive design, other browser compatability, etc. These projects were typically done to showcase, explain, or learn singular topics, and the work I think reflects that in their more simplistic scope.</p>
           <div className="numRow">
             {pageNumbers.map(number => {
               return (
