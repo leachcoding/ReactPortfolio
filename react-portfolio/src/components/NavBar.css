@@ -138,9 +138,6 @@
 }
 
 @media (max-width: 500px) {
-  #hamburgerMain {
-    width: 100%;
-  }
   .sidenav {
     padding-top: 10rem;
   }
