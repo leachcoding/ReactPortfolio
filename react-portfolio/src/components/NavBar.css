@@ -98,6 +98,9 @@
   background-color: black;
   margin: 6px 5px;
 }
+.hamburgerContainer {
+  width: 7%;
+}
 
 #hamburgerMain {
   overflow: hidden;
@@ -154,6 +157,10 @@
   .navigation .socialMedia .socialIcons a img {
     width: 33%;
     height: 100%;
+  }
+
+  .hamburgerContainer {
+    width: 15%;
   }
   #topScroll {
     width: 7%;

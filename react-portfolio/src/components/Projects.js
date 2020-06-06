@@ -4,8 +4,78 @@ import './Projects.css';
 const Projects = () => {
   const [dayProject] = useState([
     {
-      imgSrc: 'https://via.placeholder.com/150',
+      imgSrc: 'https://www.dropbox.com/s/r5hs9njsrobavf2/screencapture-localhost-3000-2020-06-04-15_16_52.png?raw=1',
+      title: 'React Todo',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/6p46hl99bizzilr/sprint_auth.JPG?raw=1',
+      title: 'Sprint Challenge Authentication',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/qtxom2wvnj58dcm/JavaScriptII.JPG?raw=1',
+      title: 'JavaScript II',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/xcgov54w7rv7af3/array_methods_callbacks.JPG?raw=1',
+      title: 'Array Methods and Callbacks',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/qmaik914lpwxarw/screencapture-localhost-3000-2020-06-04-15_06_19.png?raw=1',
       title: 'NASA Photo of the Day',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/t00w5id6ufe7u7h/screencapture-file-C-Users-Jay-Documents-Lambda-Piano-QWERTY-index-html-2020-06-05-11_15_02.png?raw=1',
+      title: 'Piano QWERTY',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/8amhiyjjofysnmd/screencapture-file-C-Users-Jay-Documents-Lambda-MyBookList-index-html-2020-06-05-13_38_03.png?raw=1',
+      title: 'MyBookList',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/x1l576dx8byquca/node_db3.JPG?raw=1',
+      title: 'Web DB III',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/n3m8sh0g1l4tay7/JavaScriptIV.JPG?raw=1',
+      title: 'JavaScript IV',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/nmguiroaq3o0eyd/JavaScriptIII.JPG?raw=1',
+      title: 'JavaScript III',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/ncbf7yrvlm3ems6/node_api3.JPG?raw=1',
+      title: 'Node API III',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/su206z4hudvkrcy/node_api2.JPG?raw=1',
+      title: 'Node API II',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/u5i418b5bhxl2bx/node_api1.JPG?raw=1',
+      title: 'Node API I',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/x1l576dx8byquca/node_db3.JPG?raw=1',
+      title: 'Web DB III',
+      link: 'https://www.github.com/leachcoding'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/38wxz5qq6g7za7z/node_api_challenge.JPG?raw=1',
+      title: 'Node API Challenge',
       link: 'https://www.github.com/leachcoding'
     },
     {
@@ -36,11 +106,6 @@ const Projects = () => {
     {
       imgSrc: 'https://via.placeholder.com/150',
       title: 'JavaScript Foundations',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Array Methods and Callbacks',
       link: 'https://www.github.com/leachcoding'
     },
     {
@@ -165,11 +230,6 @@ const Projects = () => {
     },
     {
       imgSrc: 'https://via.placeholder.com/150',
-      title: 'React Todo',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
       title: 'Cypress Testing',
       link: 'https://www.github.com/leachcoding'
     },
@@ -181,11 +241,6 @@ const Projects = () => {
     {
       imgSrc: 'https://via.placeholder.com/150',
       title: 'JavaScript Closures Callbacks and Array Methods',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Sprint Challenge Authentication',
       link: 'https://www.github.com/leachcoding'
     },
     {
@@ -215,17 +270,7 @@ const Projects = () => {
     },
     {
       imgSrc: 'https://via.placeholder.com/150',
-      title: 'Node API Challenge',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
       title: 'Web DB IV',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Web DB III',
       link: 'https://www.github.com/leachcoding'
     },
     {
@@ -241,21 +286,6 @@ const Projects = () => {
     {
       imgSrc: 'https://via.placeholder.com/150',
       title: 'Node API IV',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Node API III',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Node API II',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Node API I',
       link: 'https://www.github.com/leachcoding'
     },
     {
@@ -290,32 +320,7 @@ const Projects = () => {
     },
     {
       imgSrc: 'https://via.placeholder.com/150',
-      title: 'JavaScript IV',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'JavaScript III',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'JavaScript II',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
       title: 'JavaScript I',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Piano QWERTY',
-      link: 'https://www.github.com/leachcoding'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'MyBookList',
       link: 'https://www.github.com/leachcoding'
     },
     {
@@ -458,7 +463,7 @@ const Projects = () => {
               return(
                 <div className='dayProjectCard'>
                   <img src={project.imgSrc} alt='Day Project'/>
-                  <h5>{project.title}</h5>
+                  <h6>{project.title}</h6>
                 </div>
               )
             })}
