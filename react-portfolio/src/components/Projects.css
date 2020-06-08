@@ -275,6 +275,12 @@
   .project1Info ul li {
     margin-left: -25px;
   }
+  .dayProjects .dayProjectsList .dayProjectCard {
+    width: 45%;
+  }
+  .dayProjects .dayProjectsList .dayProjectCard:hover {
+    width: 50%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -282,13 +288,6 @@
     width: 50%;
     transform: rotate(-6.5deg);
     margin-bottom: -1.6rem;
-  }
-
-  .dayProjects .dayProjectsList .dayProjectCard {
-    width: 45%;
-  }
-  .dayProjects .dayProjectsList .dayProjectCard:hover {
-    width: 50%;
   }
 
   .dayProjectCard h5 {
