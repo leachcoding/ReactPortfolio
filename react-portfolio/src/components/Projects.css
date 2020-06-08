@@ -422,10 +422,12 @@
     margin-left: -29px;
   }
   .projects .topRow {
-    width: 98%;
+    width: 95%;
+    margin: 0 auto;
   }
 
   .projects .bottomRow {
-    width: 98%;
+    width: 95%;
+    margin: 0 auto;
   }
 }
