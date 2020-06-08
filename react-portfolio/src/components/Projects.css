@@ -1,17 +1,35 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .projects {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.1rem;
   background-color: #d4e8e1;
 }
 
 .projects h1 {
   width: 25%;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
-  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg);
   margin: 0rem 0rem -1.25rem 0rem;
   font-size: 2rem;
   letter-spacing: 0.2rem;
@@ -21,44 +39,64 @@
   border-right-style: groove;
   border-color: #d4e8e1;
   text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #d4e8e1;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  -webkit-text-decoration-color: #d4e8e1;
+          text-decoration-color: #d4e8e1;
 }
 
 .projects .projectsSkew {
   background-color: #199bb1;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects .projectsSkew svg {
   width: 100%;
   height: 8vh;
   margin-bottom: -0.55vh;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   fill: #d4e8e1;
 }
 
 .projects .topRow {
   width: 95%;
   margin: auto;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects .bottomRow {
   width: 95%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects .projectCard {
   width: 100%;
   border: 1px solid #199bb1;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 6px #11252d;
+  -webkit-box-shadow: 2px 2px 6px #11252d;
+          box-shadow: 2px 2px 6px #11252d;
 }
 
 .projects .projectCard h4, .projects .projectCard h5 {
@@ -67,6 +105,8 @@
 }
 
 .projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 5vh;
   width: 100%;
@@ -78,8 +118,13 @@
 }
 .project1Info {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .project1Info ul {
   width: 95%;
@@ -88,16 +133,26 @@
 .project1Info ul li {
   background: #d4e8e1;
   color: #11252d;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 5px 0px 5px 0px;
   font-size: 0.85rem;
   margin-left: -34px;
   border: 1px solid #11252d;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   font-size: 0.89rem;
   letter-spacing: 0.1rem;
@@ -119,11 +174,14 @@
   line-height: 1.6rem;
 }
 .projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
 }
 
@@ -131,17 +189,23 @@
   width: 40%;
   text-decoration: none;
   color: #11252d;
-  box-shadow: 2px -4px 1px #11252d;
+  -webkit-box-shadow: 2px -4px 1px #11252d;
+          box-shadow: 2px -4px 1px #11252d;
   border: 1px solid #125665;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 .srcLink {
     text-decoration: underline;
-    text-decoration-style: double;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
     color: #11252d;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -156,29 +220,56 @@
 }
 
 .dayProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
 .dayProjects .dayProjectsList {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .dayProjects .dayProjectsList .dayProjectCard {
   width: 30%;
   height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0.25rem;
   margin: 5px 5px 5px 5px;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
 }
 .dayProjects .dayProjectsList .dayProjectCard:hover {
@@ -193,6 +284,8 @@
 .dayProjectCard a {
   text-decoration: none;
   color: #11252d;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .dayProjectCard a:hover {
@@ -214,31 +307,54 @@
   height: 15vh;
   margin-top: 20px;
   margin-bottom: -12.1vh;
-  filter: drop-shadow(0 -3px 1px #125665);
+  -webkit-filter: drop-shadow(0 -3px 1px #125665);
+          filter: drop-shadow(0 -3px 1px #125665);
 }
 
 .animatedSquare .animatedSquarePath {
   fill: #2fb7cf;
-  animation: animateSquare 3s linear infinite;
+  -webkit-animation: animateSquare 3s linear infinite;
+          animation: animateSquare 3s linear infinite;
+}
+
+
+@-webkit-keyframes animateSquare {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
 
 
 @keyframes animateSquare {
   0% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 .numRow {
   width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 .numRow button {
-  flex: 1 1 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
 @media (max-width: 975px) {
@@ -253,11 +369,18 @@
 @media (max-width: 850px) {
   .projects h1 {
     width: 45%;
-    transform: rotate(-4.5deg);
+    -webkit-transform: rotate(-4.5deg);
+        -ms-transform: rotate(-4.5deg);
+            transform: rotate(-4.5deg);
   }
   .projects .projectCard1, .projects .projectCard2, .projects .projectCard3, .projects .projectCard4, .projects .projectCard5, .projects .projectCard6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .projects .projectCard1 img, .projects .projectCard2 img, .projects .projectCard3 img, .projects .projectCard4 img, .projects .projectCard5 img, .projects .projectCard6 img {
     width: 100%;
@@ -286,7 +409,9 @@
 @media (max-width: 500px) {
   .projects h1 {
     width: 50%;
-    transform: rotate(-6.5deg);
+    -webkit-transform: rotate(-6.5deg);
+        -ms-transform: rotate(-6.5deg);
+            transform: rotate(-6.5deg);
     margin-bottom: -1.6rem;
   }
 

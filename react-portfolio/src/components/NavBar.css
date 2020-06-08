@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -7,6 +14,8 @@
   right: 0;
   background-color: #125665;
   overflow-x: hidden;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
   padding-top: 60px;
   border-radius: 10px;
@@ -17,6 +26,8 @@
   text-decoration: none;
   font-size: 25px;
   display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   text-align: center;
   border-radius: 5px;
@@ -70,9 +81,16 @@
 }
 
 .navigation .socialMedia .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
@@ -105,6 +123,8 @@
 #hamburgerMain {
   overflow: hidden;
   background-color: white;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
   width: 100%;
@@ -114,6 +134,8 @@
 #topScroll {
   overflow: hidden;
   background-color: white;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
   width: 3%;
@@ -148,9 +170,16 @@
     font-size: 1.25rem;
   }
   .navigation .socialMedia .socialIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
 
