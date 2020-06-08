@@ -4,14 +4,59 @@ import './Projects.css';
 const Projects = () => {
   const [dayProject] = useState([
     {
+      imgSrc: 'https://www.dropbox.com/s/xgttq6dn8151cfp/screencapture-localhost-3000-character-2020-06-08-12_35_09.png?raw=1',
+      title: 'Sprint Challenge Single Page Applications',
+      link: 'https://github.com/leachcoding/Sprint-Challenge-Single-Page-Apps'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/vgyiv9q7mj0d5xj/screencapture-localhost-3000-2020-06-08-12_22_02.png?raw=1',
+      title: 'React Shopping Cart',
+      link: 'https://github.com/leachcoding/react-shopping-cart'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/qr9hilz1vya20jj/screencapture-localhost-3000-2020-06-07-22_03_32%20%281%29.png?raw=1',
+      title: 'React American Football Scoreboard',
+      link: 'https://github.com/leachcoding/American-Football-Scoreboard'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/eueqmu7ufck81w2/screencapture-localhost-3000-2020-06-08-11_07_12.png?raw=1',
+      title: 'Insta Clone',
+      link: 'https://github.com/leachcoding/React-Components-Insta-Clone'
+    },
+    {
       imgSrc: 'https://www.dropbox.com/s/r5hs9njsrobavf2/screencapture-localhost-3000-2020-06-04-15_16_52.png?raw=1',
       title: 'React Todo',
       link: 'https://github.com/leachcoding/React-Todo'
     },
     {
+      imgSrc: 'https://www.dropbox.com/s/q64w97otplqq3k7/screencapture-localhost-3000-friendslist-2020-06-08-11_02_52%20%281%29.png?raw=1',
+      title: 'Dark Mode',
+      link: 'https://github.com/leachcoding/dark-mode'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/5wlf1hpdmql8d9s/screencapture-localhost-3000-2020-06-07-21_50_30.png?raw=1',
+      title: 'HTTP Movies Assignment',
+      link: 'https://github.com/leachcoding/HTTP-Movies-Assignment'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/gbfp0ckputwseyc/screencapture-localhost-3000-friendslist-2020-06-07-22_15_13%20%282%29.png?raw=1',
+      title: 'Auth Friends',
+      link: 'https://github.com/leachcoding/Auth-Friends'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/h2ccs44s6gjprgk/screencapture-localhost-3000-friendslist-2020-06-08-10_39_43.png?raw=1',
+      title: 'Car Sales',
+      link: 'https://github.com/leachcoding/Car-Sales'
+    },
+    {
       imgSrc: 'https://www.dropbox.com/s/2p7d39tjeijhdn9/screencapture-file-C-Users-Jay-Documents-Lambda-waterMyplants-home-html-2020-06-07-20_49_33.png?raw=1',
       title: 'waterMyPlants',
       link: 'https://github.com/leachcoding/waterMyplants'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/ywm33ro1o0u714t/JavaScriptI.JPG?raw=1',
+      title: 'JavaScript I',
+      link: 'https://github.com/leachcoding/JavaScript-I'
     },
     {
       imgSrc: 'https://www.dropbox.com/s/rh4qrkbpc65oy5k/screencapture-file-C-Users-Jay-Documents-Lambda-Sprint-Challenge-Applied-Javascript-index-html-2020-06-07-20_49_58.png?raw=1',
@@ -109,143 +154,43 @@ const Projects = () => {
       link: 'https://github.com/leachcoding/node-api-challenge'
     },
     {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Insta Clone',
-      link: 'https://github.com/leachcoding/React-Components-Insta-Clone'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'React American Football Scoreboard',
-      link: 'https://github.com/leachcoding/American-Football-Scoreboard'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'JavaScript Arrays Objects',
-      link: 'https://github.com/leachcoding/JS-Exercise-Functions-Arrays-Objects'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Sprint State Management Smurfs',
-      link: 'https://github.com/leachcoding/Sprint-Challenge-State-Management-Smurfs'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'React Bubbles',
-      link: 'https://github.com/leachcoding/react-bubbles'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Auth Friends',
-      link: 'https://github.com/leachcoding/Auth-Friends'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Car Sales',
-      link: 'https://github.com/leachcoding/Car-Sales'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
+      imgSrc: 'https://www.dropbox.com/s/6ac6gkjakzc4tli/screencapture-localhost-3000-2020-06-08-13_21_13.png?raw=1',
       title: 'Team Builder',
       link: 'https://github.com/leachcoding/team-builder'
     },
     {
-      imgSrc: 'https://via.placeholder.com/150',
+      imgSrc: 'https://www.dropbox.com/s/5wlf1hpdmql8d9s/screencapture-localhost-3000-2020-06-07-21_50_30.png?raw=1',
       title: 'React Router Movies',
       link: 'https://github.com/leachcoding/React-Router-Movies'
     },
     {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Git Flow Practice',
-      link: 'https://github.com/leachcoding/Git-Flow-Practice'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Sprint Challenge Single Page Applications',
-      link: 'https://github.com/leachcoding/Sprint-Challenge-Single-Page-Apps'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
+      imgSrc: 'https://www.dropbox.com/s/aefmp4tmvg6rld5/screencapture-file-C-Users-Jay-Documents-Lambda-DOM-I-index-html-2020-06-08-12_27_27.png?raw=1',
       title: 'DOM I',
       link: 'https://github.com/leachcoding/DOM-I'
     },
     {
-      imgSrc: 'https://via.placeholder.com/150',
+      imgSrc: 'https://www.dropbox.com/s/42mywnzupmwvy26/screencapture-file-C-Users-Jay-Documents-Lambda-DOM-II-index-html-2020-06-08-12_27_20.png?raw=1',
       title: 'DOM II',
       link: 'https://github.com/leachcoding/DOM-II'
     },
     {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Newfeed Components',
-      link: 'https://github.com/leachcoding/Newsfeed-Components'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Sprint Advanced CSS',
-      link: 'https://github.com/leachcoding/Sprint-Challenge--Advanced-CSS'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Responsive Web Design',
-      link: 'https://github.com/leachcoding/ResponsiveWebDesign'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
+      imgSrc: 'https://www.dropbox.com/s/sll6qk3yp0sp6pc/screencapture-localhost-3000-character-2020-06-08-12_37_04.png?raw=1',
       title: 'Reducer Todo',
       link: 'https://github.com/leachcoding/reducer-todo'
     },
     {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'React Shopping Cart',
-      link: 'https://github.com/leachcoding/react-shopping-cart'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Sprint Challenge Advanced React',
-      link: 'https://github.com/leachcoding/Sprint-Challenge-Advanced-React'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Dark Mode',
-      link: 'https://github.com/leachcoding/dark-mode'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
+      imgSrc: 'https://www.dropbox.com/s/njklxkgg353f1ud/screencapture-localhost-3000-2020-06-08-12_25_03.png?raw=1',
       title: 'React Github User Card',
       link: 'https://github.com/leachcoding/React-Github-User-Card'
     },
     {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'JavaScript Closures Callbacks and Array Methods',
-      link: 'https://github.com/leachcoding/JS-Exercise-Closures-Callbacks-ArrayMethods'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'Node DB Challenge',
-      link: 'https://github.com/leachcoding/node-db-challenge'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
+      imgSrc: 'https://www.dropbox.com/s/77p8gg5q2q2j5lm/screencapture-localhost-3000-character-2020-06-08-12_44_34.png?raw=1',
       title: 'Sprint React Wars',
       link: 'https://github.com/leachcoding/Sprint-Challenge-React-Wars'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'HTTP Movies Assignment',
-      link: 'https://github.com/leachcoding/HTTP-Movies-Assignment'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'JavaScript I',
-      link: 'https://github.com/leachcoding/JavaScript-I'
-    },
-    {
-      imgSrc: 'https://via.placeholder.com/150',
-      title: 'User Interface I',
-      link: 'https://github.com/leachcoding/User-Interface'
     }
   ]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [projectsPerPage] = useState(10);
+  const [projectsPerPage] = useState(4);
 
   // const paginationClickNext = () => {
   //   setCurrentPage(currentPage + 1);
