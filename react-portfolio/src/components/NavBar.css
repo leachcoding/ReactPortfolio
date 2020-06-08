@@ -164,10 +164,15 @@
 
 @media (max-width: 500px) {
   .sidenav {
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
   .sidenav a {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .navigation .socialMedia p {
+    font-size: 0.75rem;
   }
   .navigation .socialMedia .socialIcons {
     display: -webkit-box;
