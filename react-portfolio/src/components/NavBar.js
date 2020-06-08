@@ -84,11 +84,13 @@ const NavBar = () => {
         </section>
       </div>
 
-      <div id='hamburgerMain' onClick={openNav}>
-        <div className='hamburgerBar'></div>
-        <div className='hamburgerBar'></div>
-        <div className='hamburgerBar'></div>
-      </div>
+      <section id='hamburgerMain'>
+        <div className='hamburgerContainer' onClick={openNav}>
+          <div className='hamburgerBar'></div>
+          <div className='hamburgerBar'></div>
+          <div className='hamburgerBar'></div>
+        </div>
+      </section>
 
       <div id='topScroll'>
         <a href='/#'>^</a>
