@@ -171,7 +171,7 @@
 }
 
 .dayProjects .dayProjectsList .dayProjectCard {
-  width: 40%;
+  width: 30%;
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -182,7 +182,7 @@
   transition: 0.8s;
 }
 .dayProjects .dayProjectsList .dayProjectCard:hover {
-  width: 45%;
+  width: 35%;
 }
 
 .dayProjectCard h6 {
@@ -275,6 +275,12 @@
   .project1Info ul li {
     margin-left: -25px;
   }
+  .dayProjects .dayProjectsList .dayProjectCard {
+    width: 45%;
+  }
+  .dayProjects .dayProjectsList .dayProjectCard:hover {
+    width: 50%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -282,13 +288,6 @@
     width: 50%;
     transform: rotate(-6.5deg);
     margin-bottom: -1.6rem;
-  }
-
-  .dayProjects .dayProjectsList .dayProjectCard {
-    width: 45%;
-  }
-  .dayProjects .dayProjectsList .dayProjectCard:hover {
-    width: 50%;
   }
 
   .dayProjectCard h5 {

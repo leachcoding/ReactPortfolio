@@ -24,6 +24,16 @@ const Projects = () => {
       link: 'https://github.com/leachcoding/React-Components-Insta-Clone'
     },
     {
+      imgSrc: 'https://www.dropbox.com/s/8amhiyjjofysnmd/screencapture-file-C-Users-Jay-Documents-Lambda-MyBookList-index-html-2020-06-05-13_38_03.png?raw=1',
+      title: 'MyBookList',
+      link: 'https://github.com/leachcoding/MyBookList'
+    },
+    {
+      imgSrc: 'https://www.dropbox.com/s/2p7d39tjeijhdn9/screencapture-file-C-Users-Jay-Documents-Lambda-waterMyplants-home-html-2020-06-07-20_49_33.png?raw=1',
+      title: 'waterMyPlants',
+      link: 'https://github.com/leachcoding/waterMyplants'
+    },
+    {
       imgSrc: 'https://www.dropbox.com/s/r5hs9njsrobavf2/screencapture-localhost-3000-2020-06-04-15_16_52.png?raw=1',
       title: 'React Todo',
       link: 'https://github.com/leachcoding/React-Todo'
@@ -49,11 +59,6 @@ const Projects = () => {
       link: 'https://github.com/leachcoding/Car-Sales'
     },
     {
-      imgSrc: 'https://www.dropbox.com/s/2p7d39tjeijhdn9/screencapture-file-C-Users-Jay-Documents-Lambda-waterMyplants-home-html-2020-06-07-20_49_33.png?raw=1',
-      title: 'waterMyPlants',
-      link: 'https://github.com/leachcoding/waterMyplants'
-    },
-    {
       imgSrc: 'https://www.dropbox.com/s/ywm33ro1o0u714t/JavaScriptI.JPG?raw=1',
       title: 'JavaScript I',
       link: 'https://github.com/leachcoding/JavaScript-I'
@@ -77,11 +82,6 @@ const Projects = () => {
       imgSrc: 'https://www.dropbox.com/s/t00w5id6ufe7u7h/screencapture-file-C-Users-Jay-Documents-Lambda-Piano-QWERTY-index-html-2020-06-05-11_15_02.png?raw=1',
       title: 'Piano QWERTY',
       link: 'https://github.com/leachcoding/Piano-QWERTY'
-    },
-    {
-      imgSrc: 'https://www.dropbox.com/s/8amhiyjjofysnmd/screencapture-file-C-Users-Jay-Documents-Lambda-MyBookList-index-html-2020-06-05-13_38_03.png?raw=1',
-      title: 'MyBookList',
-      link: 'https://github.com/leachcoding/MyBookList'
     },
     {
       imgSrc: 'https://www.dropbox.com/s/l00kgb3es74ysmo/screencapture-file-C-Users-Jay-Documents-Lambda-UI-III-Flexbox-great-idea-index-html-2020-06-07-20_49_48.png?raw=1',
@@ -190,7 +190,7 @@ const Projects = () => {
     }
   ]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [projectsPerPage] = useState(4);
+  const [projectsPerPage] = useState(6);
 
   // const paginationClickNext = () => {
   //   setCurrentPage(currentPage + 1);
