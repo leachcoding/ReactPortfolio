@@ -171,7 +171,7 @@
 }
 
 .dayProjects .dayProjectsList .dayProjectCard {
-  width: 40%;
+  width: 30%;
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -182,7 +182,7 @@
   transition: 0.8s;
 }
 .dayProjects .dayProjectsList .dayProjectCard:hover {
-  width: 45%;
+  width: 35%;
 }
 
 .dayProjectCard h6 {
