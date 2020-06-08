@@ -242,10 +242,10 @@
   .skills h1 {
     width: 90%;
     font-size: 1.5rem;
-    -webkit-transform: rotate(7.5deg);
-        -ms-transform: rotate(7.5deg);
-            transform: rotate(7.5deg);
-    margin-bottom: -1.65rem;
+    -webkit-transform: rotate(6.8deg);
+        -ms-transform: rotate(6.8deg);
+            transform: rotate(6.8deg);
+    margin-bottom: -1.3rem;
   }
   .languages, .libraries, .tools, .relatedSkills {
     text-align: center;
