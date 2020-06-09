@@ -28,7 +28,7 @@ const About = () => {
         <div className='aboutTop'>
           <img src={require('../images/me.jpg')} alt="Me - Jay Leach - in Savannah on the waterfront" />
           <div className='aboutText'>
-            <p>Hey, I'm Jay, a(n) <span id="sequenceText">developer</span> in the Appalachian Mountains. I currently TL for Lambda School.</p>
+            <p>Hey, I'm Jay, a(n) <span id="sequenceText">developer</span> in the Appalachian Mountains. I am currently a Team Lead for Lambda School.</p>
             <p>I'm obsessed with technology, passionate about clean, semantic code, out of the box thinking, and accessibility for all. As a developer always looking to learn, try new things, and push the boundaries of what I think capable,  I strive to be the best I can be and have my work reflect the passion I feel for software development.</p>
             <p>I<span role='img' alt='paint brush' aria-label='emoji'>🖌️</span> paint<span role='img' alt='paint brush emoji' aria-label='emoji'>🎨</span>, hike<span role='img' alt='hiker mountains' aria-label='emoji'>🚵‍♂️</span>, and<span role='img' alt='weight lifter emoji' aria-label='emoji'> 🏋️‍♂️</span>lift weights in the meantime, while also enjoying hanging out with my doggo, Scout<span role='img' alt='service dog emoji' aria-label='emoji'>🐕‍🦺</span>.</p>
           </div>
