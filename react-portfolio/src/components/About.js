@@ -28,7 +28,7 @@ const About = () => {
         <div className='aboutTop'>
           <img src={require('../images/me.jpg')} alt="Me - Jay Leach - in Savannah on the waterfront" />
           <div className='aboutText'>
-            <p>Hey, I'm Jay, a(n) <span id="sequenceText">developer</span> currently based in Springfield, MO. I am a Full Stack Developer for Frontier Media. I was formerly a Team Lead at Lambda School.</p>
+            <p>Hey, I'm Jay, a(n) <span id="sequenceText">developer</span> currently based in Springfield, MO. I am a <a href='https://www.w3schools.com/whatis/whatis_fullstack.asp'>Full Stack Developer</a> for <a href='https://frontiermedialabs.com/'>Frontier Media</a>. I was formerly a <a href='https://en.wikipedia.org/wiki/Lead_programmer'>Team Lead</a> at <a href='https://lambdaschool.com/'>Lambda School</a>.</p>
             <p>I'm obsessed with technology, passionate about clean semantic code, love thinking outside of the box, and aim to build products that are accessible to everyone. As a developer, I am always looking to learn, try new things, and push the boundaries of what I know. I strive to be the best I can be and have my work reflect the passion I feel for software development.</p>
             <p>I<span role='img' alt='paint brush' aria-label='emoji'>🖌️</span> paint<span role='img' alt='paint brush emoji' aria-label='emoji'>🎨</span>, hike<span role='img' alt='hiker mountains' aria-label='emoji'>🚵‍♂️</span>, and<span role='img' alt='weight lifter emoji' aria-label='emoji'> 🏋️‍♂️</span>lift weights in the meantime, while also enjoying hanging out with my doggo, Scout<span role='img' alt='service dog emoji' aria-label='emoji'>🐕‍🦺</span>.</p>
           </div>
