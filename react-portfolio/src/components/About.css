@@ -298,6 +298,15 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .about .aboutTop {
+    width: 90%;
+  }
+  .about .aboutTop p {
+    font-size: 1.25rem;
+  }
+}
 /* iPad */
 @media (max-width: 768px) and (max-height: 1024px) {
   .dripContainer svg {
