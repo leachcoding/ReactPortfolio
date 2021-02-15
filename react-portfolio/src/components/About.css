@@ -71,13 +71,13 @@
   }
 }
 .about p {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   width: 100%;
   padding: 5px;
   margin-left: 10px;
   color: #11252d; /* Dark Blue */
   letter-spacing: 0.1rem;
-  line-height: 1.75rem;
+  line-height: 2rem;
 }
 
 .about p #sequenceText{
