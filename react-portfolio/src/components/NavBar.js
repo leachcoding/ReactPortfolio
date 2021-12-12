@@ -45,7 +45,13 @@ function scrollFunction() {
 
 const NavBar = () => {
   const size = useWindowSize();
+  const [opened, setOpened] = useState(false);
   function openNav() {
+    if (opened) {
+      closeNav()
+      return
+    }
+    setOpened(true);
     if(size.width > 500){
       document.getElementById("mySidenav").style.width = "20%";
       document.getElementById("hamburgerMain").style.marginRight = "25%";
@@ -55,6 +61,7 @@ const NavBar = () => {
     }
   }
   function closeNav() {
+    setOpened(false);
     if(size.width > 500){
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("hamburgerMain").style.marginRight= "0";
