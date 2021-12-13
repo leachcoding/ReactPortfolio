@@ -20,6 +20,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  min-height: 100vh;
   margin: auto;
   background-color: #d4e8e1;
   margin-top: 2.5rem;
@@ -91,7 +92,7 @@
 .about p #sequenceText{
   display: inline-block;
   text-align: center;
-  width: 7rem;
+  min-width: 175px;
   background-color: #125665;
   color: #d4e8e1;
   -webkit-box-shadow: 1px 4px 1px #11252d;
