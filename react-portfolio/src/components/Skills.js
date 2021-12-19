@@ -84,28 +84,24 @@ const Skills = () => {
           </div>
 
           <div className='tools'>
+            <div class="circle_top_left"></div>
+            <div class="circle_bottom_left"></div>
+            <div class="circle_top_right"></div>
+            <div class="circle_bottom_right"></div>
             <h4>Tools</h4>
             <ul>
-              <li>Git</li>
-              <li>Github</li>
-              <li>Netlify</li>
-              <li>Heroku</li>
-              <li>Atom</li>
-              <li>Gitbash</li>
-              <li>Postman</li>
-              <li>SQLiteStudio</li>
+              {tools.map((tool) => {
+                return <li>{tool}</li>
+              })}
             </ul>
           </div>
 
           <div className='relatedSkills'>
             <h4>Related Skills</h4>
             <ul>
-              <li>Object Oriented Programming</li>
-              <li>Test Driven Development</li>
-              <li>Pair Programming</li>
-              <li>AGILE Development</li>
-              <li>RESTful APIS</li>
-              <li>Project Management</li>
+              {relatedSkills.map((skill) => {
+                return <li>{skill}</li>
+              })}
             </ul>
           </div>
         </section>
