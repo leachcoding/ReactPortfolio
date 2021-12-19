@@ -7,6 +7,8 @@
 
 .skills {
   width: 100%;
+  min-height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,18 +74,9 @@
   margin-bottom: 1.5rem;
 }
 
-.languages {
+.skills .rowTech div {
+  width: 25%;
   text-align: center;
-  width: 13%;
-  /*border-bottom: 1px solid black;*/
-  /*border-left: 1px solid black;*/
-}
-
-.libraries, .tools, .relatedSkills {
-  width: 29%;
-  text-align: center;
-  /*border-bottom: 1px solid black;*/
-  /*border-left: 1px solid black;*/
 }
 
 .rowTech h4 {
@@ -97,51 +90,28 @@
   -webkit-text-decoration-color: #125665;
           text-decoration-color: #125665;
   color: #11252d; /* Dark Blue */
+  width: 100%;
 }
 
 .skills .rowTech ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* NEW */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 50vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
 .skills .rowTech ul li {
   background: #d4e8e1;
   color: #11252d;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  padding: 5px 0px 5px 0px;
+  width: 95%;
+  padding: 5px 0px;
   font-size: 0.85rem;
-  margin-left: -40px;
   border: 1px solid #11252d;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  font-size: 0.89rem;
   letter-spacing: 0.1rem;
 }
 
@@ -216,16 +186,15 @@
     margin-bottom: 0rem;
   }
   .languages, .libraries, .tools, .relatedSkills {
-    width: 100%;
+    width: 100% !important;
   }
   .skills .rowTech ul {
     height: auto;
     margin: 0 auto;
-    margin-left: -2.5rem;
   }
   .skills .rowTech ul li {
     margin-left: 0px;
-    width: 32%;
+    width: 80%;
   }
 }
 
@@ -258,7 +227,7 @@
             justify-content: center;
   }
   .skills .rowTech ul li {
-    width: 40%;
+    width: 80%;
   }
   .wavy path {
     d: path('M 0 30 Q 30 0, 60 30 Q 90 60, 120 30 Q 150 0, 180 30 Q 210 60, 240 30 Q 270 0, 300 30 Q 330 60, 360 30 Q 390 0, 420 30 Q 450 60, 480 30 Q 510 0, 540 30 Q 570 60, 600 30 Q 630 0, 660 30 Q 690 60, 720 30 Q 750 0, 780 30 Q 810 60, 840 30 Q 870 0, 900 30 Q 930 60, 960 30 Q 990 0, 1020 30 Q 1050 60, 1080 30 Q 1110 0, 1140 30 Q 1170 60, 1200 30 Q 1230 0, 1260 30 Q 1290 60, 1320 30 Q 1350 0, 1380 30 L 1380 100 L 0 100 Z');
