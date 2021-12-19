@@ -7,6 +7,8 @@
 
 .skills {
   width: 100%;
+  min-height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,28 +70,145 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin-bottom: 1.5rem;
 }
 
-.languages {
+.skills .rowTech div {
   text-align: center;
-  width: 13%;
-  /*border-bottom: 1px solid black;*/
-  /*border-left: 1px solid black;*/
 }
 
-.libraries, .tools, .relatedSkills {
-  width: 29%;
-  text-align: center;
-  /*border-bottom: 1px solid black;*/
-  /*border-left: 1px solid black;*/
+.skills .rowTech .languages {
+  position: relative;
+  width: 95%;
+  min-height: 100px;
+  border-radius: 10px;
+  margin: 10px auto;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, .25);
+  background-color: #2fb7cf;
+}
+
+.skills .rowTech .languages::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 13px solid transparent;
+  border-right-color: #2fb7cf;
+  border-left: none;
+  margin-top: -13px;
+  margin-left: -13px;
+}
+
+.skills .rowTech .libraries {
+  width: 90%;
+  min-height: 180px;
+  margin: 10px 0px 10px -90px;
+  background-color: rgb(47, 183, 207);
+  position: relative;
+  box-shadow: 0px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.skills .rowTech .libraries::before {
+  content: '';
+  position: absolute;
+  right: -90px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 90px solid rgb(47, 183, 207);
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  z-index: 1;
+}
+
+.skills .rowTech .libraries::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0; width: 0; height: 0;
+  border-left: 90px solid #d4e8e1;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+}
+
+.skills .rowTech .tools {
+  width: 90%;
+  min-height: 150px;
+  background-color: #2fb7cf;
+  position: relative;
+  box-shadow: -5px 2px darkgray;
+  border-radius: 0px;
+  border-bottom-left-radius: 10px;
+  z-index: 2;
+  margin: 10px 0px 10px 0px;
+}
+
+.skills .rowTech .tools .circle_top_left {
+  border-radius: 50%;
+  width: 75px;
+  min-height: 75px;
+  position: absolute;
+  top: 0px;
+  left: calc(-75px/2);
+  background-color: #2fb7cf;
+  box-shadow: inset 2px 0px darkgray;
+  z-index: 1;
+}
+
+.skills .rowTech .tools .circle_bottom_left {
+  border-radius: 50%;
+  width: 75px;
+  min-height: 75px;
+  position: absolute;
+  bottom: 0px;
+  left: calc(-75px/2);
+  background-color: #2fb7cf;
+  box-shadow: inset 2px 0px darkgray;
+  z-index: 1;
+}
+
+.skills .rowTech .tools .circle_top_right {
+  border-radius: 50%;
+  width: 75px;
+  min-height: 75px;
+  position: absolute;
+  top: 0px;
+  right: calc(-75px/2);
+  background-color: #2fb7cf;
+  box-shadow: 2px 2px darkgray;
+  z-index: 1;
+}
+
+.skills .rowTech .tools .circle_bottom_right {
+  border-radius: 50%;
+  width: 75px;
+  min-height: 75px;
+  position: absolute;
+  bottom: 0px;
+  right: calc(-75px/2);
+  background-color: #2fb7cf;
+  box-shadow: 2px 2px darkgray;
+  z-index: 1;
+}
+
+.skills .rowTech .relatedSkills {
+  width: 85%;
+  height: 0;
+  border-bottom: 150px solid #2fb7cf;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  margin: 10px 0px 10px 0px;
+  box-shadow: 0px 2px rgba(0, 0, 0, .25);
 }
 
 .rowTech h4 {
   /*border-bottom: 1px solid black;*/
   /*border-left: 1px solid black;*/
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   letter-spacing: 0.2rem;
   text-decoration: underline;
   -webkit-text-decoration-style: double;
@@ -97,59 +216,52 @@
   -webkit-text-decoration-color: #125665;
           text-decoration-color: #125665;
   color: #11252d; /* Dark Blue */
+  width: 100%;
+}
+
+.skills .rowTech .libraries h4 {
+  margin-left: 50px;
 }
 
 .skills .rowTech ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* NEW */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 50vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
+  padding-inline-start: 0px;
+  width: 95%;
+  margin: 10px auto;
+}
+
+.skills .rowTech .libraries ul {
+  margin-left: 90px;
+}
+
+.skills .rowTech .libraries ul li {
+  z-index: 1;
 }
 
 .skills .rowTech ul li {
-  background: #d4e8e1;
   color: #11252d;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  padding: 5px 0px 5px 0px;
+  background-color: white;
+  flex: auto;
+  min-width: 75px;
+  padding: 5px;
+  margin: 5px;
   font-size: 0.85rem;
-  margin-left: -40px;
   border: 1px solid #11252d;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+  border-radius: 5px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  font-size: 0.89rem;
   letter-spacing: 0.1rem;
 }
 
 .skills .rowTech ul li:hover {
   background: #11252d;
   color: #d4e8e1;
-  border: 0.3rem ridge #125665;
-  font-size: 1.2rem;
   border-top-color: #2fb7cf;
   border-left-color: #2fb7cf;
 }
@@ -216,16 +328,15 @@
     margin-bottom: 0rem;
   }
   .languages, .libraries, .tools, .relatedSkills {
-    width: 100%;
+    width: 100% !important;
   }
   .skills .rowTech ul {
     height: auto;
     margin: 0 auto;
-    margin-left: -2.5rem;
   }
   .skills .rowTech ul li {
     margin-left: 0px;
-    width: 32%;
+    width: 80%;
   }
 }
 
@@ -258,7 +369,7 @@
             justify-content: center;
   }
   .skills .rowTech ul li {
-    width: 40%;
+    width: 80%;
   }
   .wavy path {
     d: path('M 0 30 Q 30 0, 60 30 Q 90 60, 120 30 Q 150 0, 180 30 Q 210 60, 240 30 Q 270 0, 300 30 Q 330 60, 360 30 Q 390 0, 420 30 Q 450 60, 480 30 Q 510 0, 540 30 Q 570 60, 600 30 Q 630 0, 660 30 Q 690 60, 720 30 Q 750 0, 780 30 Q 810 60, 840 30 Q 870 0, 900 30 Q 930 60, 960 30 Q 990 0, 1020 30 Q 1050 60, 1080 30 Q 1110 0, 1140 30 Q 1170 60, 1200 30 Q 1230 0, 1260 30 Q 1290 60, 1320 30 Q 1350 0, 1380 30 L 1380 100 L 0 100 Z');

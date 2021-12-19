@@ -2,6 +2,59 @@ import React from 'react';
 import './Skills.css';
 
 const Skills = () => {
+  const languages = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Python',
+    'SQL'
+  ];
+  const librariesFrameworksDatabases = [
+    'Angular.js',
+    'Bootstrap',
+    'Vue.js',
+    'Vuetify',
+    'Flask',
+    'Jinja',
+    'Postgresql',
+    'MySQL',
+    'SQLAlchemy',
+    'React.js',
+    'Redux',
+    'LESS',
+    'SASS',
+    'Styled-Components',
+    'Express.js',
+    'Node.js',
+    'Knex.js',
+    'bcrypt.js',
+    'Jest',
+    'Cypress'
+  ];
+  const tools = [
+    'AWS',
+    'Elastic Beanstalk',
+    'S3',
+    'EC2',
+    'AWS RDS',
+    'Git',
+    'Github',
+    'Netlify',
+    'Heroku',
+    'Atom',
+    'Gitbash',
+    'Postman',
+    'SQLiteStudio',
+  ];
+  const relatedSkills = [
+    'Object Oriented Programming',
+    'Test Driven Development',
+    'Pair Programming',
+    'AGILE Development',
+    'RESTful APIS',
+    'Project Management'
+  ];
+
   return (
     <>
       <div className='skills'>
@@ -15,54 +68,40 @@ const Skills = () => {
           <div className='languages'>
             <h4>Languages</h4>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>SQL</li>
+              {languages.map((language) => {
+                return <li>{language}</li>
+              })}
             </ul>
           </div>
 
           <div className='libraries'>
             <h4>Libraries/Frameworks</h4>
             <ul>
-              <li>React.js</li>
-              <li>Redux</li>
-              <li>LESS</li>
-              <li>SASS</li>
-              <li>Styled-Components</li>
-              <li>Express.js</li>
-              <li>Node.js</li>
-              <li>Knex.js</li>
-              <li>bcrypt.js</li>
-              <li>Jest</li>
-              <li>Cypress</li>
+              {librariesFrameworksDatabases.map((listItem) => {
+                return <li>{listItem}</li>
+              })}
             </ul>
           </div>
 
           <div className='tools'>
+            <div class="circle_top_left"></div>
+            <div class="circle_bottom_left"></div>
+            <div class="circle_top_right"></div>
+            <div class="circle_bottom_right"></div>
             <h4>Tools</h4>
             <ul>
-              <li>Git</li>
-              <li>Github</li>
-              <li>Netlify</li>
-              <li>Heroku</li>
-              <li>Atom</li>
-              <li>Gitbash</li>
-              <li>Postman</li>
-              <li>SQLiteStudio</li>
+              {tools.map((tool) => {
+                return <li>{tool}</li>
+              })}
             </ul>
           </div>
 
           <div className='relatedSkills'>
             <h4>Related Skills</h4>
             <ul>
-              <li>Object Oriented Programming</li>
-              <li>Test Driven Development</li>
-              <li>Pair Programming</li>
-              <li>AGILE Development</li>
-              <li>RESTful APIS</li>
-              <li>Project Management</li>
+              {relatedSkills.map((skill) => {
+                return <li>{skill}</li>
+              })}
             </ul>
           </div>
         </section>

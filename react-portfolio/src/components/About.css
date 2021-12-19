@@ -322,7 +322,7 @@
   }
 }
 /* iPhone 6/7/8 and 6/7/8 plus -- works for Pixel 2 and Pixel 2 XL*/
-@media (max-width:414px) {
+@media screen and (max-width:414px) {
   .dripContainer svg {
     margin-bottom: -0.15rem;
   }
